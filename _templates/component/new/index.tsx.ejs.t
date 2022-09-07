@@ -5,7 +5,7 @@ sh: prettier --write src/<%= h.changeCase.param(level) %>/<%= h.changeCase.param
 import React from 'react';
 import './<%= h.changeCase.param(name) %>.style.scss';
 
-const <%= h.changeCase.pascal(name) %> = (props) => (
+const <%= h.changeCase.pascal(name) %> = ({}) => (
   <div className='<%= h.changeCase.param(name) %>'>
     <h1><%= h.changeCase.param(name) %></h1>
   </div>
